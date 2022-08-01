@@ -1,3 +1,33 @@
 html {
   font-family: 'Titillium Web', sans-serif;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+article {
+  display: flex;
+}
+
+article.main-cards div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px 0 10px;
+  border: 5px ridge black;
+  border-radius: 5%;
+  align-items: center;
+}
+
+article.main-cards div img {
+  width: 20vw;
+  height: 20vw;
+  border: 5px ridge black;
+  border-radius: 50%;
+}
