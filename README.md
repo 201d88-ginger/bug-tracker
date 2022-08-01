@@ -13,3 +13,7 @@
 
 - [Bug View](https://wireframe.cc/ucyVNw)
 ![Bug View](img/bug-track-bros-bugtrack-view.png)
+
+## Domain Model
+
+![Domain Model](img/Domain_Model_BugBros.jpg)
