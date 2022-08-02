@@ -1,3 +1,53 @@
 html {
   font-family: 'Titillium Web', sans-serif;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  border-bottom: 5px solid black;
+  margin-bottom: 2em;
+}
+
+header img {
+  margin: 20px;
+}
+
+header h1 {
+  margin: auto;
+  font-size: 5em;
+  font-weight: bolder;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: auto 20px auto 0;
+  width: 150px;
+  height: 130px;
+  border: 2px solid black;
+}
+
+header li {
+  margin-bottom: 20px;
+  font-size: x-large;
+}
+
+header li:link {
+  font-size: x-large;
+}
+
+header li:hover {
+  font-size: xx-large;
+}
