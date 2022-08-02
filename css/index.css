@@ -36,7 +36,6 @@ header ul {
   margin: auto 20px auto 0;
   width: 150px;
   height: 130px;
-  border: 2px solid black;
 }
 
 header li {
@@ -50,6 +49,14 @@ header li:link {
 
 header li:hover {
   font-size: xx-large;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
 }
 
 main {
