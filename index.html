@@ -14,7 +14,7 @@
 </head>
 <body>
   <header>
-    <img src="" alt="" width="100" height="100">
+    <img src="img/pest-control-logo-template-featuring-a-bug-graphic-1254c-4139 (2).png" alt="" width="100" height="100">
     <h1>Bug Tracker</h1>
     <nav>
       <ul>
@@ -27,20 +27,25 @@
   <main>
     <form id="submission-form">
       <fieldset>
-        <select name="projects" id="projects">
-          <option value="new-project">New Project</option>
+        <select name="projects" id="projects" class="form-element">
+          <option value="new-project">Select Project</option>
         </select>
         <label for="project-name"></label>
-        <input type="text" id="project-name" name="project-name" placeholder="Project Name...">
+        <input type="text" id="project-name" name="project-name" class="form-element" placeholder="Project Name...">
         <div id="bug-details">
-          <select name="priority" id="priority">
+          <select name="assignment" id="assignment" class="form-element">
+            <option value="">New Owner</option>
+            <label for="owner"></label>
+            <input type="text" id="owner" name="owner" placeholder="Owner Name...">
+          </select>
+          <select name="priority" id="priority" class="form-element">
             <option value="">Priority Level</option>
             <option value="A">A</option>
             <option value="B">B</option>
             <option value="C">C</option>
             <option value="D">D</option>
           </select>
-          <select name="bug-type" id="bug-type">
+          <select name="bug-type" id="bug-type" class="form-element">
             <option value="">Type</option>
             <option value="hardlock">Hardlock</option>
             <option value="softlock">Softlock</option>
@@ -49,25 +54,21 @@
             <option value="syntax">Syntax</option>
             <option value="logic">Logic</option>
           </select>
-          <select name="assignment" id="assignment">
-            <option value="">New Owner</option>
-            <label for="owner"></label>
-            <input type="text" id="owner" name="owner" placeholder="Owner Name...">
-          </select>
         </div>
         <label for="subject"></label>
-        <input type="text" id="subject" name="subject" placeholder="Subject...">
+        <input type="text" id="subject" name="subject" class="form-element" placeholder="Subject...">
         <label for="description"></label>
-        <textarea name="description" id="description" cols="30" rows="10" placeholder="Describe your bug..."></textarea>
-        <div id="button-container">
-          <button type="reset">Clear Form</button>
-          <button type="submit">Submit</button>
+        <textarea name="description" id="description" cols="30" rows="10" class="form-element" placeholder="Describe your bug..."></textarea>
+        <div id="button-container" class="form-element">
+          <button type="reset" id="clear-btn">Clear Form</button>
+          <button type="submit" id="submit-btn">Submit</button>
         </div>
       </fieldset>
     </form>
     <div id="bug-container">
       <div id="bug-example">
         <p class="bug-name">Bug Name</p>
+        <p id="project-name">Project Name</p>
         <p id="bug-status">Bug Status</p>
         <p id="bug-priority">Bug Priority</p>
         <button type="button">more info...</button>
@@ -79,7 +80,7 @@
       <li><a href="about.html">Contact Us</a></li>
       <li>&copy; Bug Track Bros. Tracking Utility</li>
     </ul>
-    <img src="" alt="" width="100" height="100">
+    <img src="img/pest-control-logo-template-featuring-a-bug-graphic-1254c-4139 (2).png" alt="" width="100" height="100">
   </footer>
   <script src="js/index.js"></script>
 </body>
