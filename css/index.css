@@ -1,10 +1,19 @@
 html {
   font-family: 'Titillium Web', sans-serif;
+  background: linear-gradient(#FFA300,#1D0C05);
+  background-repeat: no-repeat;
+  min-height: 100%;
 }
 
 body {
   display: flex;
   flex-direction: column;
+  background: 1D0C05;
+  max-height: 100%;
+}
+
+a {
+  color: #1D0C05;
 }
 
 header {
@@ -15,12 +24,15 @@ header {
 
 header img {
   margin: 20px;
+  width: 150px;
+  height: 150px;
 }
 
 header h1 {
   margin: auto;
   font-size: 5em;
   font-weight: bolder;
+  color: #1d0c05;
 }
 
 header nav {
@@ -51,18 +63,11 @@ header li:hover {
   font-size: xx-large;
 }
 
-a {
-  text-decoration: none;
-}
-
-a:visited {
-  color: black;
-}
-
 main {
   display: flex;
   margin: auto;
   width: 70%;
+  height: 85%;
 }
 
 fieldset {
@@ -102,21 +107,32 @@ fieldset {
 }
 
 footer {
+  border-top: 2px solid black;
   display: flex;
-  justify-content: space-evenly;
   margin-top: 30px;
+  justify-content: space-evenly;
   align-items: center;
+  bottom: 0;
 }
 
 footer ul {
   display: flex;
   flex-direction: column;
+  /* border: 2px solid black; */
+  margin-left: 20px;
+  padding: 10px;
+}
+
+footer img {
+  margin: auto 20px auto auto;
 }
 
 footer ul li {
   margin-bottom: 10px;
+  color: #FFA300;
 }
 
 footer ul li a {
   margin-left: 15px;
+  color: #FFA300;
 }
