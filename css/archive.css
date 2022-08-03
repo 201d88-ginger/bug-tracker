@@ -58,7 +58,7 @@ header li:hover {
 }
 
 main{
-  height: 125vw;
+  /* height: 125vw; */
   max-width: 95%;
   margin: auto;
 }
@@ -76,24 +76,36 @@ footer ul a:visited{
 }
 
 #archive-list{
+  background: linear-gradient(#1D0C05,#FFA300 95%);
   margin-top: 0px;
   margin-right: 20px;
-  padding: 2em;
+  padding: 1em;
   border: 3px solid #1D0C05;
-  border-radius: 12px; 
+  border-radius: 12px;
+  width: 300px;
+  height: 50vh;
+  overflow: scroll;
+}
+
+#w3review li {
+  margin-bottom: 10px;
+  background-color: rgb(229, 234, 237, .5);
+  border-radius: 5px;
+  padding: 5px;
 }
 
 #job-card{
-  background: linear-gradient(#1D0C05,#FFA300);
-  max-width: 500px;
+  background: linear-gradient(#1D0C05,#FFA300 95%);
+  width: 500px;
   border: 3px solid #1d0c05;
-  padding: 15px;
+  padding: 20px;
   border-radius: 12px;
-
+  height: 49vh;
+  overflow: scroll;
 }
 
 .tag {
-  padding: 4px 8px;
+  padding: 6px 8px;
   border: 1px solid #e5eaed;
   border-radius: 50px;
   font-size: 12px;
@@ -104,9 +116,17 @@ footer ul a:visited{
 .name {
   font-size: 24px;
   font-weight: 600;
-  margin-top: 16px;
-  margin-left: 175px;
+  margin-top: 30px;
   margin-bottom: 20px;
+  color: #ffa300;
+}
+
+#archive-list-header {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #ffa300;
 }
 
 #job-details {
@@ -120,11 +140,10 @@ footer ul a:visited{
 }
 
 #archive-container{
-  margin-top: 100px;
+  margin-top: 15px;
   margin-bottom: 50px;
   display: flex;
   justify-content: space-around;
-  padding: 2em;
   height: 85%;
 }
 
