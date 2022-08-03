@@ -159,7 +159,7 @@ bugForm.addEventListener('submit', function(event){
     }
 
     storeAndReset();
-
+    renderCards();
   }
 });
 
