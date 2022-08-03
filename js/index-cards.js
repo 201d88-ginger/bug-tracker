@@ -23,6 +23,8 @@ function renderCards() {
     if (allBugCards[i].status === 'Open') {
       let bugCard = document.createElement('div');
       bugCard.classList.add('bug-card');
+      bugCard.id = i;
+      bugCard.setAttribute('onClick', 'showDetails(this.id)');
 
       let pProjectTitle = document.createElement('p');
       pProjectTitle.classList.add('project-title');
@@ -36,21 +38,22 @@ function renderCards() {
       pBugPriority.classList.add('bug-priority');
       pBugPriority.textContent = allBugCards[i].priority;
 
-      let closeBtn = document.createElement('button');
-      closeBtn.classList.add('close-btn');
-      closeBtn.id = i;
-      closeBtn.textContent = 'Close Bug';
-      closeBtn.setAttribute('onClick', 'closeBug(this.id)');
+      // let closeBtn = document.createElement('button');
+      // closeBtn.classList.add('close-btn');
+      // closeBtn.id = i;
+      // closeBtn.textContent = 'Close Bug';
+      // closeBtn.setAttribute('onClick', 'closeBug(this.id)');
 
       bugContainer.appendChild(bugCard);
       bugCard.appendChild(pProjectTitle);
       bugCard.appendChild(pBugName);
       bugCard.appendChild(pBugPriority);
-      bugCard.appendChild(closeBtn);
+      // bugCard.appendChild(closeBtn);
     }
   }
 }
 
+/* eslint-disable */
 function closeBug(clickedID){
   Bug.allBugs[+clickedID].status = 'Closed';
   console.log(Bug.allBugs[+clickedID].status);
