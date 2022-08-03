@@ -17,3 +17,7 @@
 ## Domain Model
 
 ![Domain Model](img/Domain_Model_BugBros.jpg)
+
+## Project Management
+
+[Project Manager](https://github.com/orgs/Bug-Track-Bros/projects/1/views/1)
