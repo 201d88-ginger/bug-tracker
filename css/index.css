@@ -64,9 +64,16 @@ fieldset {
   width: 25%;
 }
 
+#project-name{
+  display: none;
+}
+
 #owner {
-  margin-left: 10px;
   width: 150px
+}
+
+#owner-name {
+  display: none;
 }
 
 .form-element {
