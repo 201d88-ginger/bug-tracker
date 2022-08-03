@@ -58,6 +58,10 @@ header li:hover {
   font-size: xx-large;
 }
 
+footer ul a:visited{
+  color: #1d0c05;
+}
+
 a{
   text-decoration: none;
   color: #ffa300;
@@ -112,5 +116,12 @@ a:visited{
   margin-bottom: 50px;
   display: flex;
   justify-content: space-around;
+}
 
+#footer-a{
+  color: #1d0c05;
+}
+
+footer ul a{
+  color: #1d0c05;
 }
