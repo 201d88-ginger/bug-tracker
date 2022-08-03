@@ -1,63 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/archive.css">
-  
-  <title>Bug Archive</title>
-</head>
-<body>
-  <header>
-    <img src="" alt="" width="100" height="100">
-    <h1>Bug Archive</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="archive.html">Archive</a></li>
-        <li><a href="about.html"></a>About Us</li>
-      </ul>
-    </nav>
-  </header>
-  <div id="archive-list">
-    <h1>Past Jobs</h1>
-<form action="/action_page.php">
-  <p><label for="w3review">Type in the name of the project below:</label></p>
-  <textarea id="w3review" name="w3review" rows="4" cols="40">
-    
-  </textarea>
-  <br>
-  <label for="/action_page.php"></label>
-<input type="search" id="job-search">
-<button>Search</button>
-</form>
-<p>Click the "Search" button and the jobs matching the name will appear.</p>
-  </div>
-  <div id="job-card">
-    <div class="card">
-      <span class="tag">Nature</span>
-      <span class="tag">Lake</span>
-      <div class="name">Lago di Braies</div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim sed diam
-        pharetra
-        vitae ipsum odio.</p>
-    </div>
-  </div>
-  <main>
 
-  </main>
-  <footer>
-    <ul>
-      <li><a href="about.html">Contact Us</a></li>
-      <li>&copy; Bug Track Bros. Tracking Utility</li>
-    </ul>
-    <img src="" alt="" width="100" height="100">
-  </footer>  
-  <script src="js/index.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/archive.css">
+
+    <title>Bug Archive</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="img/transparent-pest-control-logo-template-featuring-a-bug-graphic-1254c-4139 (4).png" alt="" width="100"
+        height="100">
+
+      <h1>Bug Archive</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="archive.html">Archive</a></li>
+          <li><a href="about.html"></a>About Us</li>
+        </ul>
+      </nav>
+    </header>
+    <div id="archive-container">
+      <div id="archive-list">
+          <!-- <h1>Past Jobs</h1> -->
+          <form action="/action_page.php">
+            <p><label for="w3review">Type in the name of the project below:</label></p>
+            <div>
+              <ul id="w3review" name="w3review" rows="4" cols="40">
+                <li>Example Bug</li>
+                <li>Example Bug 2</li>
+              </ul>
+            </div>
+            <br>
+            <label for="/action_page.php"></label>
+            <input type="search" id="job-search">
+            <button>Search</button>
+          </form>
+          <p>Click the "Search" button and the jobs matching the name will appear.</p>
+      </div>
+        <div id="job-card">
+          <div class="card">
+            <div class="card-details"></div>
+            <span class="tag">Priority</span>
+            <span class="tag">Type</span>
+            <span class="tag">Assignment</span>
+            <div class="name">Bug Name</div>
+            <p id="job-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim
+              sed diam
+              pharetra
+              vitae ipsum odio.</p>
+          </div>
+        </div>
+    </div>
+    
+    <main>
+
+    </main>
+    <footer>
+      <ul>
+        <li><a href="about.html">Contact Us</a></li>
+        <li>&copy; Bug Track Bros. Tracking Utility</li>
+      </ul>
+      <!-- <img src="" alt="" width="100" height="100"> -->
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+
 </html>
