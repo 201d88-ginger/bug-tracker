@@ -8,8 +8,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  background: 1D0C05;
-  max-height: 100%;
+  min-height: 100%;
 }
 
 a {
@@ -66,14 +65,20 @@ header li:hover {
 main {
   display: flex;
   margin: auto;
-  width: 70%;
-  height: 85%;
+  min-width: 90%;
+  padding: 2em;
 }
 
 fieldset {
   display: flex;
   flex-direction: column;
   width: 25%;
+  margin: 1vw;
+}
+
+#submission-form {
+  margin: auto 1vw auto 0;
+  height: 40vw;
 }
 
 #project-name{
@@ -104,6 +109,24 @@ fieldset {
 #submit-btn {
   background-color: #4c934c;
   border-radius: 5px;
+}
+
+#bug-container {
+  margin: auto 1vw auto 0;
+  min-height: 40vw;
+  min-width: 30%;
+  background: linear-gradient(45deg, #1D0C05, #FFA300, #1D0C05, transparent);
+}
+
+section {
+  margin: 0 auto;
+  min-width: 40%;
+  min-height: 90%;
+}
+
+#bug-details-context {
+  margin: 15px;
+  min-height: 90%;
 }
 
 footer {
