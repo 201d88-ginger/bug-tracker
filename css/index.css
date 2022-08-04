@@ -1,6 +1,5 @@
 html {
   font-family: 'Titillium Web', sans-serif;
-  background: linear-gradient(#FFA300,#1D0C05);
   background-repeat: no-repeat;
   min-height: 100%;
 }
@@ -9,6 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  background: linear-gradient(#FFA300,#1D0C05);
 }
 
 a {
@@ -74,6 +74,7 @@ fieldset {
   flex-direction: column;
   width: 25%;
   margin: 1vw;
+  
 }
 
 #submission-form {
@@ -112,11 +113,87 @@ fieldset {
 }
 
 #bug-container {
-  margin: auto 1vw auto 0;
-  min-height: 40vw;
-  min-width: 30%;
-  background: linear-gradient(45deg, #1D0C05, #FFA300, #1D0C05, transparent);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 20px;
+  grid-auto-rows:   minmax(110px, 150px);
+  grid-column-gap: 0.8rem;
+  row-gap: 20px;
+  margin: 0 2%;
+  padding: 1%;
+  min-width: 36%;
+
+  background: #1d0c0538;
+  border-color: #ffa2006e;
+  border-style: groove; 
+  border-width: 4px;
+  height: 60vh;
+  overflow-y: auto;
 }
+
+.bug-card{
+  border: 2px solid rgb(216, 216, 194);
+  background-color: beige;
+  border-radius: 4px;
+  padding: .5rem;
+  line-height: 130%;
+  max-height: 150px;
+  width: 80%;
+  font-weight:bold;
+}
+
+/* NOT WORKING - tried to highlight first line, like a header, but it seems to consider the whole block one line.
+
+.bug-card p::first-line{
+  background-color: rgb(255, 174, 0);
+} */
+
+#sheet-container{
+  margin: auto 1vw auto 0;
+  min-width: 30%;
+  min-height: 40vw;
+  width: 90%;
+  height: 60vh;
+
+  font-size: xx-large;
+  line-height: 130%;
+  background: #1d0c0538;
+  background: #9c630181;
+  border-color: #ffa2006e;
+  border-width: 4px;
+  border-style: groove; 
+  padding: 1%;
+  overflow-y:auto;
+}
+
+#sheet-name{
+  font-weight: bold;
+}
+
+#sheet-owner {
+  font-size: large;
+  font-style: italic;
+}
+
+#sheet-priority{
+  font-size: large;
+  font-weight: bold;
+}
+
+#sheet-type {
+  font-size: large;
+}
+
+#sheet-details {
+  font-size: large;
+  line-height: 130%;
+}
+
+#sheet-container button{
+  background-color: brown;
+  border-radius: 10%;
+}
+
 
 section {
   margin: 0 auto;
@@ -141,7 +218,6 @@ footer {
 footer ul {
   display: flex;
   flex-direction: column;
-  /* border: 2px solid black; */
   margin-left: 20px;
   padding: 10px;
 }
