@@ -1,31 +1,51 @@
 'use strict';
 
-//Global variables
-// let allBugCards = [];
-
 //DOM references
+let sheetContainer = document.getElementById('sheet-container');
+let sheetName = document.getElementById('sheet-name');
+let sheetOwner = document.getElementById('sheet-owner');
+let sheetPriority = document.getElementById('sheet-priority');
+let sheetType = document.getElementById('sheet-type');
+let sheetSubject = document.getElementById('sheet-subject');
+let sheetDetails = document.getElementById('sheet-details');
+let sheetCloseBtn = document.getElementById('sheet-close-btn');
+sheetCloseBtn.setAttribute('onClick', 'closeBug(this.id)');
 
-let bugDetailsCtx = document.getElementById('bug-details-context');
-let bugName = document.getElementById('bug-name');
-let bugOwner = document.getElementById('bug-owner');
-let bugPriority = document.getElementById('bug-priority');
-let bugType = document.getElementById('bug-type');
-let bugSubject = document.getElementById('bug-subject');
-let bugDetails = document.getElementById('bug-details');
+//Render bug data on details sheet
+function showDetails(id){
 
-// let closeBtn = document.createElement('button');
-// closeBtn.classList.add('close-btn');
-// closeBtn.id = i;
-// closeBtn.textContent = 'Close Bug';
-// closeBtn.setAttribute('onClick', 'closeBug(this.id)');
-// bugCard.appendChild(closeBtn);
+  sheetName.textContent = allBugCards[id].projectName;
+  sheetOwner.textContent = allBugCards[id].ownerName;
+  sheetPriority.textContent = allBugCards[id].priority;
+  sheetType.textContent = allBugCards[id].type;
+  sheetSubject.textContent = allBugCards[id].subject;
+  sheetDetails.textContent = allBugCards[id].description;
 
-function showDetails(id){ // eslint-disable-line
-  bugName.textContent = allBugCards[id].projectName;
-  bugOwner.textContent = allBugCards[id].ownerName;
-  bugPriority.textContent = allBugCards[id].priority;
-  bugType.textContent = allBugCards[id].type;
-  bugSubject.textContent = allBugCards[id].subject;
-  bugDetails.innerHTML = allBugCards[id].description;
+  sheetCloseBtn.id = id;
+
+  if(sheetCloseBtn.hidden === true){
+    sheetCloseBtn.disabled = false;
+    sheetCloseBtn.hidden = false;
+  }
 }
 
+//Close bugs in the Bug.allbugs
+function closeBug(clickedID){
+  Bug.allBugs[+clickedID].status = 'Closed';
+  localStorage.setItem('bugPackage', JSON.stringify(Bug.allBugs));
+  clearSheet();
+  renderCards();
+}
+
+//Clear the data from the details sheet
+function clearSheet(){
+  sheetName.textContent = '';
+  sheetOwner.textContent = '';
+  sheetPriority.textContent = '';
+  sheetType.textContent = '';
+  sheetSubject.textContent = '';
+  sheetDetails.textContent = '';
+
+  sheetCloseBtn.disabled = true;
+  sheetCloseBtn.hidden = true;
+}

@@ -46,9 +46,11 @@ projectSelector.addEventListener('change', function(){
   if (projectSelector.options.selectedIndex === 1){
     projectName.style.display = 'block';
     projectName.disabled = false;
+    projectName.required = true;
   } else {
     projectName.style.display = 'none';
     projectName.disabled = true;
+    projectName.required = false;
   }
 });
 
@@ -56,9 +58,11 @@ ownerSelector.addEventListener('change', function(){
   if (ownerSelector.options.selectedIndex === 1){
     ownerName.style.display = 'block';
     ownerName.disabled = false;
+    ownerName.required = true;
   } else {
     ownerName.style.display = 'none';
     ownerName.disabled = true;
+    ownerName.required = false;
   }
 });
 
@@ -173,8 +177,10 @@ function reloadInputNames() {
 function resetInputFields(){
   projectName.style.display = 'none';
   projectName.disabled = true;
+  projectName.required = false;
   ownerName.style.display = 'none';
   ownerName.disabled = false;
+  ownerName.required = false;
 }
 
 function checkArrayForEqualBugString(array, bugObject){
