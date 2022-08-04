@@ -12,7 +12,6 @@ body {
 
 header {
   display: flex;
-  border-bottom: 5px solid #1d0c05;
   margin-bottom: 2em; 
 }
 
@@ -84,7 +83,7 @@ footer ul a:visited{
   border-radius: 12px;
   width: 300px;
   height: 50vh;
-  overflow: scroll;
+  overflow-y: auto;
 }
 
 #w3review li {
@@ -101,7 +100,7 @@ footer ul a:visited{
   padding: 20px;
   border-radius: 12px;
   height: 49vh;
-  overflow: scroll;
+  overflow-y: auto;
 }
 
 .tag {
@@ -148,7 +147,6 @@ footer ul a:visited{
 }
 
 footer {
-  border-top: 2px solid #1D0C05;
   display: flex;
   margin-top: 30px;
   justify-content: space-evenly;
