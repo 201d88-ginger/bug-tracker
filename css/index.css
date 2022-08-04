@@ -1,0 +1,237 @@
+html {
+  font-family: 'Titillium Web', sans-serif;
+  background-repeat: no-repeat;
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background: linear-gradient(#FFA300,#1D0C05);
+}
+
+a {
+  color: #1D0C05;
+}
+
+header {
+  display: flex;
+  border-bottom: 5px solid black;
+  margin-bottom: 2em;
+}
+
+header img {
+  margin: 20px;
+  width: 150px;
+  height: 150px;
+}
+
+header h1 {
+  margin: auto;
+  font-size: 5em;
+  font-weight: bolder;
+  color: #1d0c05;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: auto 20px auto 0;
+  width: 150px;
+  height: 130px;
+}
+
+header li {
+  margin-bottom: 20px;
+  font-size: x-large;
+}
+
+header li:link {
+  font-size: x-large;
+}
+
+header li:hover {
+  font-size: xx-large;
+}
+
+main {
+  display: flex;
+  margin: auto;
+  min-width: 90%;
+  padding: 2em;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: 1vw;
+  
+}
+
+#submission-form {
+  margin: auto 1vw auto 0;
+  height: 40vw;
+}
+
+#project-name{
+  display: none;
+}
+
+#owner {
+  width: 150px
+}
+
+#owner-name {
+  display: none;
+}
+
+.form-element {
+  margin-bottom: 10px;
+}
+
+#button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#clear-btn {
+  border-radius: 5px;
+}
+
+#submit-btn {
+  background-color: #4c934c;
+  border-radius: 5px;
+}
+
+#bug-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 20px;
+  grid-auto-rows:   minmax(110px, 150px);
+  grid-column-gap: 0.8rem;
+  row-gap: 20px;
+  margin: 0 2%;
+  padding: 1%;
+  min-width: 36%;
+
+  background: #1d0c0538;
+  border-color: #ffa2006e;
+  border-style: groove; 
+  border-width: 4px;
+  height: 60vh;
+  overflow-y: auto;
+}
+
+.bug-card{
+  border: 2px solid rgb(216, 216, 194);
+  background-color: beige;
+  border-radius: 4px;
+  padding: .5rem;
+  line-height: 130%;
+  max-height: 150px;
+  width: 80%;
+  font-weight:bold;
+}
+
+/* NOT WORKING - tried to highlight first line, like a header, but it seems to consider the whole block one line.
+
+.bug-card p::first-line{
+  background-color: rgb(255, 174, 0);
+} */
+
+#sheet-container{
+  margin: auto 1vw auto 0;
+  min-width: 30%;
+  min-height: 40vw;
+  width: 90%;
+  height: 61vh;
+
+  font-size: xx-large;
+  line-height: 130%;
+  background: #1d0c0538;
+  background: #9c630181;
+  border-color: #ffa2006e;
+  border-width: 4px;
+  border-style: groove; 
+  padding: 1%;
+  overflow-y:auto;
+}
+
+#sheet-name{
+  font-weight: bold;
+}
+
+#sheet-owner {
+  font-size: large;
+  font-style: italic;
+}
+
+#sheet-priority{
+  font-size: large;
+  font-weight: bold;
+}
+
+#sheet-type {
+  font-size: large;
+}
+
+#sheet-details {
+  font-size: large;
+  line-height: 130%;
+}
+
+#sheet-container button{
+  background-color: brown;
+  border-radius: 10%;
+}
+
+
+section {
+  margin: 0 auto;
+  min-width: 40%;
+  min-height: 90%;
+}
+
+#bug-details-context {
+  margin: 15px;
+  min-height: 90%;
+}
+
+footer {
+  border-top: 2px solid black;
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1vw 0;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+footer img {
+  margin: auto 20px auto auto;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+  color: #FFA300;
+}
+
+footer ul li a {
+  margin-left: 15px;
+  color: #FFA300;
+}

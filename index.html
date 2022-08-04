@@ -1,1 +1,95 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+  
+  <title>Bug Track</title>
+</head>
+<body>
+  <header>
+    <img src="img/transparent=pest-control-logo-template-featuring-a-bug-graphic-1254c-4139.png" alt="Bug Track Bros Exterminator Logo" width="150" height="150">
+    <h1>Bug Tracker</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="archive.html">Archive</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form id="submission-form">
+      <fieldset>
+        <select name="projects" id="projects" class="form-element"required>
+          <option value="" disabled selected>Select Project</option>
+          <option value="new-project">New Project</option>
+        </select>
+        <label for="project-name"></label>
+        <input type="text" id="project-name" name="project-name" class="form-element" placeholder="Enter Project Name" required disabled>
+        <div id="bug-details">
+          <select name="owner" id="owner" class="form-element" required>
+            <option value="" disabled selected>Select Owner</option>
+            <option value="new-owner">New Owner</option>
+            <label for="owner-name"></label>
+            <input type="text" id="owner-name" name="owner-name" class="form-element" placeholder="Enter Owners Name" required disabled>
+          </select>
+          <select name="priority" id="priority" class="form-element" required>
+            <option value="" disabled selected>Priority Level</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+          </select>
+          <select name="bug-type" id="bug-type" class="form-element" required>
+            <option value="" disabled selected>Type</option>
+            <option value="hardlock">Hardlock</option>
+            <option value="softlock">Softlock</option>
+            <option value="text">Text Error</option>
+            <option value="audio">Audio</option>
+            <option value="syntax">Syntax</option>
+            <option value="logic">Logic</option>
+          </select>
+        </div>
+        <label for="subject"></label>
+        <input type="text" id="subject" name="subject" class="form-element" placeholder="Subject..." required>
+        <label for="description"></label>
+        <textarea name="description" id="description" cols="30" rows="10" class="form-element" placeholder="Describe your bug..." required></textarea>
+        <div id="button-container" class="form-element">
+          <button type="reset" id="clear-btn">Clear Form</button>
+          <button type="submit" id="submit-btn">Submit</button>
+        </div>
+      </fieldset>
+    </form>
+    <aside id="bug-container">
+    </aside>
+    <section>
+      <div id="sheet-container">
+        <h2 id="sheet-name"></h2>
+        <h2 id="sheet-owner"></h2>
+        <h2 id="sheet-priority"></h2>
+        <h2 id="sheet-type"></h2>
+        <h2 id="sheet-subject"></h2>
+        <p id="sheet-details"></p>
+        <button id="sheet-close-btn" type="submit" hidden disabled>Close Bug</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <ul>
+      <li><a href="about.html">Contact Us</a></li>
+      <li>&copy; Bug Track Bros. Tracking Utility</li>
+    </ul>
+    <img src="img/transparent2-pest-control-logo-template-featuring-a-bug-graphic-1254c-4139.png" alt="Bug Track Bros Exterminator Logo" width="100" height="100">
+  </footer>
+  <script src="js/index.js"></script>
+  <script src="js/index-cards.js"></script>
+  <script src="js/index-card-details.js"></script>
+</body>
+</html>
