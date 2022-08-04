@@ -36,7 +36,7 @@ function renderCards() {
 
       let pBugPriority = document.createElement('p');
       pBugPriority.classList.add('bug-priority');
-      pBugPriority.textContent = allBugCards[i].priority;
+      pBugPriority.textContent = `Priority: ${allBugCards[i].priority}`;
 
       bugContainer.appendChild(bugCard);
       bugCard.appendChild(pProjectTitle);

@@ -16,8 +16,8 @@ function showDetails(id){
 
   sheetName.textContent = allBugCards[id].projectName;
   sheetOwner.textContent = allBugCards[id].ownerName;
-  sheetPriority.textContent = allBugCards[id].priority;
-  sheetType.textContent = allBugCards[id].type;
+  sheetPriority.textContent = `Priority ${allBugCards[id].priority}`;
+  sheetType.textContent = `Type: ${allBugCards[id].type}`;
   sheetSubject.textContent = allBugCards[id].subject;
   sheetDetails.textContent = allBugCards[id].description;
 
