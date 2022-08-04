@@ -17,7 +17,6 @@ a {
 
 header {
   display: flex;
-  border-bottom: 5px solid #1d0c05;
   margin-bottom: 2em;
 }
 
@@ -166,7 +165,6 @@ p {
 }
 
 footer {
-  border-top: 2px solid #1D0C05;
   display: flex;
   margin-top: 30px;
   justify-content: space-evenly;
