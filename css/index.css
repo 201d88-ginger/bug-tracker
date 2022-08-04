@@ -145,7 +145,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   text-align: center;
-  overflow: hide;
+  overflow: hidden;
 }
 
 .project-title {
@@ -202,13 +202,6 @@ fieldset {
 #sheet-container button{
   background-color: brown;
   border-radius: 10%;
-}
-
-
-section {
-  margin: 0 auto;
-  min-width: 40%;
-  min-height: 90%;
 }
 
 #bug-details-context {
