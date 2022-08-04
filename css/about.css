@@ -17,7 +17,7 @@ a {
 
 header {
   display: flex;
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid #1d0c05;
   margin-bottom: 2em;
 }
 
@@ -91,7 +91,7 @@ article.main-cards div {
   display: flex;
   flex-direction: column;
   margin: auto;
-  border: 5px ridge black;
+  border: 5px ridge #1D0C05;
   border-radius: 5%;
   align-items: center;
   width: 18%;
@@ -109,7 +109,7 @@ h2 {
 
 article.main-cards div img {
   width: 10vw;
-  border: 5px ridge black;
+  border: 5px ridge #1D0C05;
   border-radius: 50%;
   margin: 1em;
 }
@@ -166,7 +166,7 @@ p {
 }
 
 footer {
-  border-top: 2px solid black;
+  border-top: 2px solid #1D0C05;
   display: flex;
   margin-top: 30px;
   justify-content: space-evenly;
